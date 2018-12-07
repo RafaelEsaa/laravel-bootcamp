@@ -71,11 +71,10 @@ class BootcampController extends Controller
     }
 
     public function consultBootcamp($locale = null){
-        $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
         
-        if($lang == 'es' || $lang == 'en'){
-            Session::put('locale',$lang);
-            App::setLocale($lang);
+        if (App::isLocale('en') || App::isLocale('es')) {
+            Session::put('locale',$locale);
+            App::setLocale($locale);
         }
 
         //Datos del Menu Header
