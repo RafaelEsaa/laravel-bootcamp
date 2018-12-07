@@ -11,4 +11,5 @@ Por ejemplo:
 - APP_DEBUG=true
 - APP_URL=http://localhost:8000
 - API_URL=https://bootcamp-comparison-rafaelesaa.c9users.io/api
-6) ```php artisan serve```
+6) ```npm run dev``` para desarrollo o ```npm run prod``` para produccion
+7) ```php artisan serve``` para correr el servidor de laravel
