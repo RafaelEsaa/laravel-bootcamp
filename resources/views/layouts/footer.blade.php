@@ -5,7 +5,7 @@
                 <div class="col-md-4 bootcamps">
                 <h2 class="title">{{__('messages.comparison')}}</h2>
                     @foreach($bootcamps as $com)
-                        <a href="/compare/{{$com[2]}}-vs-{{$com[1]}}-vs-{{$com[0]}}?>" class="text">
+                        <a href="<?php echo Session::get('locale');?>/compare/{{$com[2]}}-vs-{{$com[1]}}-vs-{{$com[0]}}?>" class="text">
                             <p>{{$com[2]}} vs {{$com[1]}} vs {{$com[0]}}</p>
                         </a>
                     @endforeach
